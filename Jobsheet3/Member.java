@@ -39,9 +39,12 @@ public class Member {
         }
     }
 
-    public int installment(int Membayar){
-        TotalPinjaman -= Membayar;
-        limitPinjaman += Membayar;
-        return TotalPinjaman;
+    public void installment(int Membayar){
+        if (0.1 * TotalPinjaman < Membayar ) {
+            TotalPinjaman -= Membayar;
+        }else{
+            System.out.println("Maaf, Cicilan harus 10% dari jumlah pinjaman");
+        }
+        
     }
 }

@@ -20,7 +20,7 @@ public class TestCooperativeDemo {
        System.out.println("Current loan amount  : " + member1.getTotalPinjaman());
 
       System.out.println("\nPaying 1,000,000 installments");
-      member1.installment(1000000);
+      member1.installment(10000);
       System.out.println("Current loan amount   : " + member1.getTotalPinjaman());
       
       System.out.println("\nPaying 3,000,000 installment");
